@@ -22,3 +22,22 @@ console.info(message[1])
 console.info(message.charAt(1))
 console.info(message.search("mensaje"))
 console.info(message.includes("mensaje"))
+
+// ------------------------INTERPOLACION CON CADENAS, CONCATENACIOM------------------------
+const messageOne="Este es un mensaje para"
+const messageTwo="prcaticar concatenacion"
+const fullName="Karina Pineda Parra"
+
+console.info(messageOne)
+console.info(messageTwo)
+
+console.info("option 1(+):"+messageOne+" "+messageTwo)
+console.info("option 2(,):",messageOne,messageTwo)
+console.info(`option 3(\`): ${messageOne}${messageTwo}`)
+
+// -----------------------------INTERPOLACION CON COMPONENTE-------------
+const header=`
+<header>
+    <h1>Mi nombre es ${fullName}</h1>
+</header>`
+document.write(header)
