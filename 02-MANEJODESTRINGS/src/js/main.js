@@ -22,20 +22,22 @@
 // console.info(message.charAt(1))
 // console.info(message.search("mensaje"))
 // console.info(message.includes("mensaje"))
+// console.info(message.startsWith("Este"))
+// console.info(message.endsWith("pruebas"))
 
 // ------------------------INTERPOLACION CON CADENAS, CONCATENACIOM------------------------
-const messageOne="Este es un mensaje para"
-const messageTwo="prcaticar concatenacion"
-const fullName="Karina Pineda Parra"
+// const messageOne="Este es un mensaje para"
+// const messageTwo="prcaticar concatenacion"
+// const fullName="Karina Pineda Parra"
 
-console.info(messageOne)
-console.info(messageTwo)
+// console.info(messageOne)
+// console.info(messageTwo)
 
-console.info("option 1(+):"+messageOne+" "+messageTwo)
-console.info("option 2(,):",messageOne,messageTwo)
-console.info(`option 3(\`): ${messageOne}${messageTwo}`)
-console.info("option 4 concat() simple", messageOne.concat(" ").concat(messageTwo))
-console.info("option 4 concat() abreviada", messageOne.concat(" ",messageTwo))
+// console.info("option 1(+):"+messageOne+" "+messageTwo)
+// console.info("option 2(,):",messageOne,messageTwo)
+// console.info(`option 3(\`): ${messageOne}${messageTwo}`)
+// console.info("option 4 concat() simple", messageOne.concat(" ").concat(messageTwo))
+// console.info("option 4 concat() abreviada", messageOne.concat(" ",messageTwo))
 
 
 // -----------------------------INTERPOLACION CON COMPONENTE-------------
@@ -61,3 +63,36 @@ console.info("option 4 concat() abreviada", messageOne.concat(" ",messageTwo))
 // console.info(messageOne.trimStart())
 // console.info(messageOne.trimEnd())
 // console.info(messageOne.trim())
+
+// -------------------FRAGMENTACION DE UN STRING -----------------------------
+// const message= "anita lava la tina porque se porto mal"
+// document.write(message)
+
+// console.info(message.substring(9))
+// console.info(message.substring(0,10))
+
+// console.info(message.slice(9))
+// console.info(message.slice(0,10))
+
+// ------------------------REEMPLAZAR LETRAS O ASI ---------------------
+// console.info(message.replace("a", "e"))
+// console.info(message.replaceAll("a", "e"))
+// console.info(message.replaceAll(/[aeiou]/g,"p"))
+
+// -----------------------RELLENO DE STRINGS------------------------
+// const message ="Riwi"
+// document.write(message)
+
+// --------------------repite unn texto varias veces
+// console.info(message.repeat(100))
+// --------------------rellena de acuerdo a la cantidad de caracteres que yo necesite
+// console.info(message.padStart(10,"*"))
+// console.info(message.padEnd(10,"*"))
+
+// ----------------------DESTRUCCION TOTAL-----------------------------------
+// const message="En riwi todos somos una familia"
+// document.write(message)
+
+// console.table(message.split(""))
+// console.table(message.split(" "))
+// console.table(message.split(" ",2))
