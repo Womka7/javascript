@@ -1,0 +1,5 @@
+let science=Number(prompt())[]
+let social=[]
+let english=[]
+let math=[]
+let ethics=[]
