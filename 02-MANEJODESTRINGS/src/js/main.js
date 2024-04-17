@@ -33,7 +33,7 @@
 // console.info(messageOne)
 // console.info(messageTwo)
 
-// console.info("option 1(+):"+messageOne+" "+messageTwo)
+// console.info("option 1(+):" messageOne+" "+messageTwo)
 // console.info("option 2(,):",messageOne,messageTwo)
 // console.info(`option 3(\`): ${messageOne}${messageTwo}`)
 // console.info("option 4 concat() simple", messageOne.concat(" ").concat(messageTwo))
