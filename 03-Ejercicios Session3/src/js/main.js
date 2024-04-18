@@ -61,7 +61,7 @@ let numbers=[4, 6 , 8]
 let count= numbers.length
 console.log()
 // 18.Calcular la factorial de 5.
-function 
+
 // 19.Redondear el número 3.6.
 
 // 20.Calcular el doble de 9.
