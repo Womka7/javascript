@@ -12,29 +12,54 @@ console.info(numebrOne/numberTwo)
 // 5. Calcular el módulo (resto) de una división.
 console.info(numebrOne%numberTwo)
 // 6. Generar un número aleatorio entre 1 y 10.
-console.info()
+let numberRandom= Math.round(Math.random()*(10-1)+1)//redondea por encima de 9.9999 y con floor redondea por debajo
+let numberRandomo= Math.floor(Math.random()*(10)+1)//toma un rangpo de (10-1) y se le suma 1
+console.info(numberRandom, numberRandomo )
 // 7. Elevar un número a la potencia de otro.
-
+console.info(numebrOne**numberTwo)
 // 8. Calcular la raíz cuadrada de un número.
-
+let numberThree=25
+console.info(Math.sqrt(numberThree))
 // 9. Convertir grados Celsius a Fahrenheit.
-
+let gradosCelcius=37
+console.info("Grados Fahrenheit = ", (gradosCelcius*(9/5))+32)
 // 10.Calcular el área de un círculo.
-
+let radio=10
+console.log("área de un círculo = ",Math.PI*Math.pow(radio,2))
 // 11.Calcular el perímetro de un cuadrado.
-
+let lado=3
+console.info("perímetro de un cuadrado= ", lado*4)
 // 12.Calcular el volumen de una esfera.
-
+console.info("volumen de una esfera = ", 4*Math.PI*Math.pow(radio,2))
 // 13.Calcular el área de un triángulo.
-
+let base=10
+let altura=5
+console.info("área de triangulo = ",(base*altura)/2)
 // 14.Generar la tabla de multiplicar del número 5.
 
+// let table=5
+// for (let i=1;i<=10;i++){
+//     let result =(table*i)
+//     console.log(result)
+// }
+
+function multiplicarTabla(numero, inicio, fin) {
+    for (let i = inicio; i <= fin; i++) {
+        let resultado = numero * i;
+        console.log(resultado);
+    }
+}
+
+multiplicarTabla(5, 1, 10);
+
 // 15.Encontrar el número mayor entre 3, 7 y 2.
-
+console.info(Math.max(3, 7 ,2))
 // 16.Encontrar el número menor entre 10, 20 y 5.
-
+console.info(Math.min(10, 20, 5))
 // 17.Calcular el promedio de 4, 6 y 8.
-
+let numbers=[4, 6 , 8]
+let count= numbers.length
+console.log()
 // 18.Calcular la factorial de 5.
 
 // 19.Redondear el número 3.6.
