@@ -57,13 +57,16 @@ console.info(Math.max(3, 7 ,2))
 // 16.Encontrar el número menor entre 10, 20 y 5.
 console.info(Math.min(10, 20, 5))
 // 17.Calcular el promedio de 4, 6 y 8.
-let numbers=[4, 6 , 8]
-let count= numbers.length
-let suma=0
-for (let i=0; i<count; i++){
-    suma += numbers[i]
+function calculaPromedioArray(numbers){
+    let suma=0
+    let count= numbers.length
+    for (let i=0; i<count; i++){
+        suma += numbers[i]
+    }
+    return suma / count
 }
-console.log(`Promedio de ${numbers} es ${suma}/${count} = ${suma/count}`)
+let numbers=[4, 6 , 8]
+console.log(`Promedio de ${numbers} es = ${calculaPromedioArray(numbers)}`)
 // 18.Calcular la factorial de 5.
 let numberFact=5
 let resFactorial=1
@@ -120,15 +123,19 @@ let diagonalMayor=10
 let diagonalMenor=8
 console.log(diagonalMayor*diagonalMenor)
 // 37.Calcular el área de un trapecio con bases 6 y 10 y altura 4.
-
+let baseMayorTrapecio=10
+let baseMenorTrapecio=6
+let alturaTrapecio=4
+console.log((alturaTrapecio*(baseMayorTrapecio+baseMenorTrapecio))/2)
 // 38.Generar la tabla de multiplicar del número 8.
-
+multiplicarTabla(8, 1, 10);
 // 39.Encontrar el número mayor entre 15, 20 y 25.
-
+console.info(Math.max(15, 20 ,25))
 // 40.Encontrar el número menor entre 50, 75 y 100.
-
+console.info(Math.max(50, 75 ,100))
 // 41.Calcular el promedio de 7, 9 y 12.
-
+let numberrs=[7, 9 , 12]
+console.log(`Promedio de ${numberrs} es = ${calculaPromedioArray(numberrs)}`)
 // 42.Calcular la factorial de 7.
 
 // 43.Redondear el número 7.9.
