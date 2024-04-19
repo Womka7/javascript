@@ -46,7 +46,7 @@ console.info("área de triangulo = ",(base*altura)/2)
 function multiplicarTabla(numero, inicio, fin) {
     for (let i = inicio; i <= fin; i++) {
         let resultado = numero * i;
-        console.log(resultado);
+        console.log( `${numero}  x ${i} = ${resultado}`);
     }
 }
 
@@ -59,45 +59,66 @@ console.info(Math.min(10, 20, 5))
 // 17.Calcular el promedio de 4, 6 y 8.
 let numbers=[4, 6 , 8]
 let count= numbers.length
-console.log()
+let suma=0
+for (let i=0; i<count; i++){
+    suma += numbers[i]
+}
+console.log(`Promedio de ${numbers} es ${suma}/${count} = ${suma/count}`)
 // 18.Calcular la factorial de 5.
-
+let numberFact=5
+let resFactorial=1
+for(let i=1; i<=numberFact;i++){
+    resFactorial*=i
+}
+console.log(resFactorial)
 // 19.Redondear el número 3.6.
-
+console.log(Math.round(3.6))
 // 20.Calcular el doble de 9.
-
+console.log(Math.pow(9,2))
 // 21.Calcular el triple de 4.
-
+console.log(Math.pow(4,3))
 // 22.Calcular el cuadrado de 6.
-
+console.log(Math.pow(6,2))
 // 23.Calcular el cubo de 3.
-
+console.log(Math.pow(3,3))
 // 24.Calcular la suma de los primeros 10 números naturales.
-
+let sumarNaturales =0
+for (let i=0; i<=10; i++){
+    sumarNaturales +=i
+}
+console.log(sumarNaturales)
 // 25.Calcular la resta entre 50 y 25.
-
+console.log( 50 -25)
 // 26.Multiplicar 7 por 9.
-
+console.log(7*9)
 // 27.Dividir 144 por 12.
-
+console.log(144/12)
 // 28.Obtener el módulo de 17 dividido por 4.
-
+console.log(17%4)
 // 29.Generar un número aleatorio entre 20 y 30.
-
+let numberRandom2= Math.round(Math.random()*(30-20)+20)//redondea por encima de 9.9999 y con floor redondea por debajo
+console.info(numberRandom2 )
 // 30.Elevar 2 a la potencia de 8
-
+console.log(Math.pow(2,8))
 // 31.Calcular la raíz cuadrada de 144.
-
+console.info(Math.sqrt(144))
 // 32.Convertir 100 grados Celsius a Fahrenheit.
-
+let gradosCelcius2=100
+console.info("Grados Fahrenheit = ", (gradosCelcius2*(9/5))+32)
 // 33.Calcular el área de un rectángulo de base 5 y altura 10.
-
+let baseR=5
+let alturaR=10
+console.log(baseR*alturaR)
 // 34.Calcular el perímetro de un círculo con radio 6.
-
+let radioC=6
+console.log(Math.PI*2*radioC)
 // 35.Calcular el volumen de un cubo con lado 4.
-
+let ladoCubo=4
+console.log(Math.pow(ladoCubo,3))
 // 36.Calcular el área de un rombo con diagonales de 8 y 10.
-
+let diagonalMayor=10
+let diagonalMenor=8
+console.log(diagonalMayor*diagonalMenor)
 // 37.Calcular el área de un trapecio con bases 6 y 10 y altura 4.
 
 // 38.Generar la tabla de multiplicar del número 8.
