@@ -31,8 +31,8 @@ console.groupCollapsed("Estructuras If, If else, If Else-If")
 console.groupEnd();
 
 console.groupCollapsed("Ejercicio de mes en trismestre")
- 
-// // ---------desarrollar un algoritmo que solicite el numero del mes 
+
+// // ---------desarrollar un algoritmo que solicite el numero del mes
 // //----------- y valide con el numero del mesn en que trismestre del año se encuentra
 
 // let numberMonth = prompt("Ingresa un mes que deseas conocer su trimestre")
@@ -94,27 +94,52 @@ console.groupEnd()
 // ----------CICLOS FOR --------
 console.groupCollapsed("ciclo For")
 
-for (i=0; i<5; i++){
-    console.log("Hola mundo")
-}
+// for (i=0; i<5; i++){
+//     console.log("Hola mundo")
+// }
 
 // imprimir todas las tablas del 1 al 10
 
-function multiplicarTabla(numero, inicio, fin) {
-    for (let i = inicio; i <= fin; i++) {
-        let resultado = numero * i;
-        console.log( `${numero}  x ${i} = ${resultado}`);
-    }
-}
+// function multiplicarTabla(numero =prompt("ingresa")) {
+//     for (let i = 1; i <= 10; i++) {
+//         let resultado = numero * i;
+//         console.log( `${numero}  x ${i} = ${resultado}`);
+//     }
+// }
 
-multiplicarTabla(1, 1, 10);
-multiplicarTabla(2, 1, 10);
-multiplicarTabla(3, 1, 10);
-multiplicarTabla(4, 1, 10);
-multiplicarTabla(5, 1, 10);
-multiplicarTabla(6, 1, 10);
-multiplicarTabla(7, 1, 10);
-multiplicarTabla(8, 1, 10);
-multiplicarTabla(9, 1, 10);
-multiplicarTabla(10, 1, 10);
+// multiplicarTabla(); //este tambien permite solicitar la info por prompt
+// multiplicarTabla(1);
+// multiplicarTabla(2);
+// multiplicarTabla(3);
+// multiplicarTabla(4);
+// multiplicarTabla(5);
+// multiplicarTabla(6);
+// multiplicarTabla(7);
+// multiplicarTabla(8);
+// multiplicarTabla(9);
+// multiplicarTabla(10);
+
+
+
+//--------- ciclo anidado para imprimir las tablas de multiplicar  con dos for------
+console.log("TABLAS DE MULTIPLICAR")
+
+// for( let j=1; j<=10; j++){
+//     console.log(`tabla de multiplicar  ${j}`)
+//     for (let i = 1; i <= 10; i++) {
+//         let resultado = j * i;
+//         console.log( `${j}  x ${i} = ${resultado}`);
+//     }
+// }
+
+
+// --------TABLA DE MULTIPLICAR CON WHILE----------
+let numero=9
+let i=1
+while(contador<=10){
+    let resultado=numero*i
+    console.log(`${numero} x ${i} = ${resultado}`)
+    i ++
+}
 console.groupEnd()
+
