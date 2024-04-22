@@ -2,162 +2,309 @@
 // Clan Dell
 // 21/04/2024
 
-console.groupCollapsed("Ejercicio 1");
 // Ejercicio 1
-console.groupEnd();
+console.groupCollapsed("Ejercicio 1")
+let number = parseInt(prompt("Ingresa un número:"));
+if (number > 0) {
+    console.log(` ${number} Es positivo`)
+} else {
+    console.log(` ${number} Es negativo`)
+}
+console.groupEnd()
 
-console.groupCollapsed("Ejercicio 2");
 // Ejercicio 2
-console.groupEnd();
+console.groupCollapsed(" Ejercicio 2")
+let numberN = parseInt(prompt("Ingresa un número:"));
+if (numberN < 0) {
+    console.log(` ${numberN} Es negativo`)
+} else {
+    console.log(` ${numberN} Es positivo`)
+}
+console.groupEnd()
 
-console.groupCollapsed("Ejercicio 3");
 // Ejercicio 3
-console.groupEnd();
+console.groupCollapsed(" Ejercicio 3")
+let numeroPar = parseInt(prompt("Ingresa un número:"));
+if (numeroPar % 2 === 0) {
+    console.log(` ${numeroPar} Es par`)
+} else {
+    console.log(` ${numeroPar} Es impar`)
+}
+console.groupEnd()
 
-console.groupCollapsed("Ejercicio 4");
 // Ejercicio 4
-console.groupEnd();
+console.groupCollapsed(" Ejercicio 4")
+let numeroImpar = parseInt(prompt("Ingresa un número:"));
+if (numeroImpar % 2 !== 0) {
+    console.log(` ${numeroImpar} Es impar`)
+} else {
+    console.log(` ${numeroImpar} Es par`)
+}
+console.groupEnd()
 
-console.groupCollapsed("Ejercicio 5");
 // Ejercicio 5
-console.groupEnd();
+console.groupCollapsed("Ejercicio 5")
+let numeroMultiplo = parseInt(prompt("Ingresa un número:"));
+if (numeroMultiplo % 5 === 0) {
+    console.log(`${numeroMultiplo} es múltiplo de 5`)
+} else {
+    console.log(` ${numeroMultiplo}No es múltiplo de 5`)
+}
+console.groupEnd()
 
-console.groupCollapsed("Ejercicio 6");
 // Ejercicio 6
-console.groupEnd();
+console.groupCollapsed("Ejercicio 6")
+let numeroDivisible = parseInt(prompt("Ingresa un número:"));
+if (numeroDivisible % 3 === 0) {
+    console.log(`${numeroDivisible} 'es divisible entre 3'`)
+} else {
+    console.log(`${numeroDivisible} 'No es divisible entre 3'`)
+}
+console.groupEnd()
 
-console.groupCollapsed("Ejercicio 7");
 // Ejercicio 7
-console.groupEnd();
+console.groupCollapsed("Ejercicio 7")
+let numeroMayor = parseInt(prompt("Ingresa un número:"));
+if (numeroMayor > 100) {
+    console.log(`${numeroMayor} es mayor que 100`)
+} else {
+    console.log(`${numeroMayor} es menor que 100`)
+}
+console.groupEnd()
 
-console.groupCollapsed("Ejercicio 8");
 // Ejercicio 8
-console.groupEnd();
+console.groupCollapsed("Ejercicio 8")
+let numeroMenor = parseInt(prompt("Ingresa un número:"));
+if (numeroMenor < -50) {
+    console.log(` ${numeroMenor} es menor que -50`)
+} else {
+    console.log(` ${numeroMenor} es mayor que -50`)
+}
+console.groupEnd()
 
-console.groupCollapsed("Ejercicio 9");
 // Ejercicio 9
-console.groupEnd();
+console.groupCollapsed("Ejercicio 9")
+let numeroRango = parseInt(prompt("Ingresa un número:"));
+if (numeroRango >= 20 && numeroRango <= 50) {
+    console.log(`${numeroRango} está en el rango de 20 a 50`)
+} else {
+    console.log(`${numeroRango} No está en el rango de 20 a 50`)
+}
+console.groupEnd()
 
-console.groupCollapsed("Ejercicio 10");
 // Ejercicio 10
-console.groupEnd();
+console.groupCollapsed("Ejercicio 10")
+let numeroCero =parseInt(prompt("Ingresa un número:"));
+if (numeroCero === 0) {
+    console.log(`${numeroCero}es igual a 0`)
+} else {
+    console.log(`${numeroCero} No es igual a 0`)
+}
+console.groupEnd()
 
-console.groupCollapsed("Ejercicio 11");
 // Ejercicio 11
-console.groupEnd();
+console.groupCollapsed("Ejercicio 11")
+let numeroRange = parseInt(prompt("Ingresa un número:"));
+if (numeroRange > -10 && numeroRange < 10) {
+    console.log(`${numeroRange} es mayor de -10 y menor de 10`)
+} else {
+    console.log(`${numeroRange} No es mayor de -10 y menor de 10`)
+}
+console.groupEnd()
 
-console.groupCollapsed("Ejercicio 12");
 // Ejercicio 12
-console.groupEnd();
+console.groupCollapsed("Ejercicio 12")
+let añoBiciesto = parseInt(prompt("Ingresa un año:"));
+if (añoBiciesto % 4 === 0 && (añoBiciesto % 100 !== 0 || añoBiciesto % 400 === 0)) {
+    console.log(`${añoBiciesto} es bisiesto`)
+} else {
+    console.log(`${añoBiciesto} No es bisiesto`)
+}
+console.groupEnd()
 
-console.groupCollapsed("Ejercicio 13");
 // Ejercicio 13
-console.groupEnd();
+console.groupCollapsed("Ejercicio 13")
+let edadPersona = parseInt(prompt("Ingresa un número:"));
+if (edadPersona >= 18) {
+    console.log(`Es mayor de edad`)
+} else {
+    console.log(`Es menor de edad`)
+}
+console.groupEnd()
 
-console.groupCollapsed("Ejercicio 14");
 // Ejercicio 14
-console.groupEnd();
+console.groupCollapsed("Ejercicio 14")
 
-console.groupCollapsed("Ejercicio 15");
+console.groupEnd()
+
 // Ejercicio 15
-console.groupEnd();
+console.groupCollapsed("Ejercicio 15")
+let numeroCuadradoP = parseInt(prompt("Ingresa un número:"));
+if (Math.sqrt(numeroCuadradoP) % 1 === 0) {
+    console.log(`${numeroCuadradoP} es un cuadrado perfecto`);
+}
+else {
+    console.log(`${numeroCuadradoP} No es un cuadrado perfecto`)
+}
+console.groupEnd()
 
-console.groupCollapsed("Ejercicio 16");
 // Ejercicio 16
-console.groupEnd();
+console.groupCollapsed("Ejercicio 16")
+let numeroFib = parseInt(prompt("Ingresa un número:"));
+if (numeroFib === 0 || numeroFib === 1) {
+    console.log("Caso especial, donde 0 y 1 son Fibonacci");
+}
+let fibonacciOne = 0;
+let fibonacciTwo = 1;
+let fibonacciActual;
+for (let i = 2; fibonacciActual <= numeroFib; i++) {
+    fibonacciActual = fibonacciOne + fibonacciTwo;
+    if (fibonacciActual === numeroFib) {
+        console.log("Es un Fibonacci");
+        break; // Si encontramos el número de Fibonacci, no es necesario continuar el bucle
+    }
+    fibonacciOne = fibonacciTwo;
+    fibonacciTwo = fibonacciActual;
+}
+// Verificar si el número es un número de Fibonacci
+if (fibonacciActual !== numeroFib) {
+    console.log("No es un Fibonacci");
+}
+console.groupEnd()
 
-console.groupCollapsed("Ejercicio 17");
 // Ejercicio 17
-console.groupEnd();
+console.groupCollapsed("Ejercicio 17")
+let numeroPotencia= parseInt(prompt("Ingresa un número:"));
+if(Number.isInteger(Math.log2(numeroPotencia))){
+    console.log(`${numeroPotencia} es potencia de 2`)
+}else{
+    console.log(`${numeroPotencia} No es* potencia de 2`)
+}
+console.groupEnd()
 
-console.groupCollapsed("Ejercicio 18");
 // Ejercicio 18
-console.groupEnd();
+console.groupCollapsed("Ejercicio 18")
+function esPalindromo(numero) {
+    const stringNumero = numero.toString();
+    const stringInvertido = stringNumero.split('').reverse().join('');
+    return stringNumero === stringInvertido;
+}
+console.log(esPalindromo(parseInt(prompt("Ingresa un número:"))))
+console.groupEnd()
 
-console.groupCollapsed("Ejercicio 19");
 // Ejercicio 19
-console.groupEnd();
+console.groupCollapsed("Ejercicio 19")
+let cadenaT= "JavaScript es un lenguaje de la web"
+function contieneJavaScript(cadena) {
+    return cadena.toLowerCase().includes('javascript');
+}
+console.log(contieneJavaScript((cadenaT)))
+console.groupEnd()
 
-console.groupCollapsed("Ejercicio 20");
 // Ejercicio 20
-console.groupEnd();
+console.groupCollapsed("Ejercicio 20")
+function tieneMasDe10Caracteres(cadena) {
+    return cadena.length > 10;
+}
+console.log(tieneMasDe10Caracteres(String(prompt("Ingresa una cadena de texto:"))))
+console.groupEnd()
 
-console.groupCollapsed("Ejercicio 21");
 // Ejercicio 21
-console.groupEnd();
+console.groupCollapsed("Ejercicio 21")
 
-console.groupCollapsed("Ejercicio 22");
+console.groupEnd()
+
 // Ejercicio 22
-console.groupEnd();
+console.groupCollapsed("Ejercicio 22")
 
-console.groupCollapsed("Ejercicio 23");
+console.groupEnd()
+
 // Ejercicio 23
-console.groupEnd();
+console.groupCollapsed("Ejercicio 23")
 
-console.groupCollapsed("Ejercicio 24");
+console.groupEnd()
+
 // Ejercicio 24
-console.groupEnd();
+console.groupCollapsed("Ejercicio 24")
 
-console.groupCollapsed("Ejercicio 25");
+console.groupEnd()
+
 // Ejercicio 25
-console.groupEnd();
+console.groupCollapsed("Ejercicio 25")
 
-console.groupCollapsed("Ejercicio 26");
+console.groupEnd()
+
 // Ejercicio 26
-console.groupEnd();
+console.groupCollapsed("Ejercicio 26")
 
-console.groupCollapsed("Ejercicio 27");
+console.groupEnd()
+
 // Ejercicio 27
-console.groupEnd();
+console.groupCollapsed("Ejercicio 27")
 
-console.groupCollapsed("Ejercicio 28");
+console.groupEnd()
+
 // Ejercicio 28
-console.groupEnd();
+console.groupCollapsed("Ejercicio 28")
 
-console.groupCollapsed("Ejercicio 29");
+console.groupEnd()
+
 // Ejercicio 29
-console.groupEnd();
+console.groupCollapsed("Ejercicio 29")
 
-console.groupCollapsed("Ejercicio 30");
+console.groupEnd()
+
 // Ejercicio 30
-console.groupEnd();
+console.groupCollapsed("Ejercicio 30")
 
-console.groupCollapsed("Ejercicio 31");
+console.groupEnd()
+
 // Ejercicio 31
-console.groupEnd();
+console.groupCollapsed("Ejercicio 31")
 
-console.groupCollapsed("Ejercicio 32");
+console.groupEnd()
+
 // Ejercicio 32
-console.groupEnd();
+console.groupCollapsed("Ejercicio 32")
 
-console.groupCollapsed("Ejercicio 33");
+console.groupEnd()
+
 // Ejercicio 33
-console.groupEnd();
+console.groupCollapsed("Ejercicio 33")
 
-console.groupCollapsed("Ejercicio 34");
+console.groupEnd()
+
 // Ejercicio 34
-console.groupEnd();
+console.groupCollapsed("Ejercicio 34")
 
-console.groupCollapsed("Ejercicio 35");
+console.groupEnd()
+
 // Ejercicio 35
-console.groupEnd();
+console.groupCollapsed("Ejercicio 35")
 
-console.groupCollapsed("Ejercicio 36");
+console.groupEnd()
+
 // Ejercicio 36
-console.groupEnd();
+console.groupCollapsed("Ejercicio 36")
 
-console.groupCollapsed("Ejercicio 37");
+console.groupEnd()
+
 // Ejercicio 37
-console.groupEnd();
+console.groupCollapsed("Ejercicio 37")
 
-console.groupCollapsed("Ejercicio 38");
+console.groupEnd()
+
 // Ejercicio 38
-console.groupEnd();
+console.groupCollapsed("Ejercicio 38")
 
-console.groupCollapsed("Ejercicio 39");
+console.groupEnd()
+
 // Ejercicio 39
-console.groupEnd();
+console.groupCollapsed("Ejercicio 39")
 
-console.groupCollapsed("Ejercicio 40");
+console.groupEnd()
+
 // Ejercicio 40
-console.groupEnd();
+console.groupCollapsed("Ejercicio 40")
+
+console.groupEnd()
