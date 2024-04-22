@@ -2,19 +2,23 @@
 // Clan Dell
 // 21/04/2024
 
-// Ejercicio 1
+// Verifica si un número es positivo.
 console.groupCollapsed("Ejercicio 1")
-let number = parseInt(prompt("Ingresa un número:"));
+let number = parseInt(prompt("Ingresa un número \n para saber si es positivo:"));
 if (number > 0) {
     console.log(` ${number} Es positivo`)
-} else {
+} else if (number < 0){
     console.log(` ${number} Es negativo`)
+}else if(number == 0){
+    console.log(` ${number} Es cero`)
+}else{
+    console.log(` ${number} No es una entrada válida`)
 }
 console.groupEnd()
 
-// Ejercicio 2
+// Verifica si un número es negativo.
 console.groupCollapsed(" Ejercicio 2")
-let numberN = parseInt(prompt("Ingresa un número:"));
+let numberN = parseInt(prompt("Ingresa un número \n para saber si negativo:"));
 if (numberN < 0) {
     console.log(` ${numberN} Es negativo`)
 } else {
@@ -22,9 +26,9 @@ if (numberN < 0) {
 }
 console.groupEnd()
 
-// Ejercicio 3
+// Comprueba si un número es par.
 console.groupCollapsed(" Ejercicio 3")
-let numeroPar = parseInt(prompt("Ingresa un número:"));
+let numeroPar = parseInt(prompt("Ingresa un número \n para saber si es par:"));
 if (numeroPar % 2 === 0) {
     console.log(` ${numeroPar} Es par`)
 } else {
@@ -32,9 +36,9 @@ if (numeroPar % 2 === 0) {
 }
 console.groupEnd()
 
-// Ejercicio 4
+// Comprueba si un número es impar.
 console.groupCollapsed(" Ejercicio 4")
-let numeroImpar = parseInt(prompt("Ingresa un número:"));
+let numeroImpar = parseInt(prompt("Ingresa un número \n para saber si es impar:"));
 if (numeroImpar % 2 !== 0) {
     console.log(` ${numeroImpar} Es impar`)
 } else {
@@ -42,9 +46,9 @@ if (numeroImpar % 2 !== 0) {
 }
 console.groupEnd()
 
-// Ejercicio 5
+// Determina si un número es múltiplo de 5.
 console.groupCollapsed("Ejercicio 5")
-let numeroMultiplo = parseInt(prompt("Ingresa un número:"));
+let numeroMultiplo = parseInt(prompt("Ingresa un número para \n saber si es multiplo de 5:"));
 if (numeroMultiplo % 5 === 0) {
     console.log(`${numeroMultiplo} es múltiplo de 5`)
 } else {
@@ -52,13 +56,13 @@ if (numeroMultiplo % 5 === 0) {
 }
 console.groupEnd()
 
-// Ejercicio 6
+// Verifica si un número es divisible entre 3.
 console.groupCollapsed("Ejercicio 6")
-let numeroDivisible = parseInt(prompt("Ingresa un número:"));
+let numeroDivisible = parseInt(prompt("Ingresa un número para  \n determinar si es divisible por 3:"));
 if (numeroDivisible % 3 === 0) {
-    console.log(`${numeroDivisible} 'es divisible entre 3'`)
+    console.log(`${numeroDivisible} es divisible entre 3`)
 } else {
-    console.log(`${numeroDivisible} 'No es divisible entre 3'`)
+    console.log(`${numeroDivisible} No es divisible entre 3`)
 }
 console.groupEnd()
 
@@ -150,26 +154,21 @@ console.groupEnd()
 
 // Ejercicio 16
 console.groupCollapsed("Ejercicio 16")
-let numeroFib = parseInt(prompt("Ingresa un número:"));
-if (numeroFib === 0 || numeroFib === 1) {
-    console.log("Caso especial, donde 0 y 1 son Fibonacci");
-}
-let fibonacciOne = 0;
-let fibonacciTwo = 1;
-let fibonacciActual;
-for (let i = 2; fibonacciActual <= numeroFib; i++) {
-    fibonacciActual = fibonacciOne + fibonacciTwo;
-    if (fibonacciActual === numeroFib) {
-        console.log("Es un Fibonacci");
-        break; // Si encontramos el número de Fibonacci, no es necesario continuar el bucle
+
+function fibonacci(numeroFib){
+    let a =1
+    let b=1
+    while (a<=numeroFib){
+        if (a===numeroFib){
+            return (true, `El ${numeroFib} Es un numero de fibonacci`) //Es fibonacci
+        }
+        let c=a+b
+        a=b
+        b=c
     }
-    fibonacciOne = fibonacciTwo;
-    fibonacciTwo = fibonacciActual;
+    return (false, `El ${numeroFib} No es un numero de fibonacci`)//No es fibonacci
 }
-// Verificar si el número es un número de Fibonacci
-if (fibonacciActual !== numeroFib) {
-    console.log("No es un Fibonacci");
-}
+console.log(fibonacci(parseInt(prompt("Ingresa un número:"))))
 console.groupEnd()
 
 // Ejercicio 17
