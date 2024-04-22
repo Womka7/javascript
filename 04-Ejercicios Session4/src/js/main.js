@@ -1,3 +1,7 @@
+// Karina Pineda Parra
+// Clan Dell
+// 21/04/2024
+
 console.groupCollapsed("Ejercicio 1");
 // Ejercicio 1
 console.log(35>25)
