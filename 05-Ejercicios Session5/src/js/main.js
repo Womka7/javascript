@@ -4,7 +4,7 @@
 
 // Verifica si un número es positivo.
 console.groupCollapsed("Ejercicio 1")
-let number = parseInt(prompt("Ingresa un número \n para saber si es positivo:"));
+let number = Number(prompt("Ingresa un número \n para saber si es positivo:"));
 if (number > 0) {
     console.log(` ${number} Es positivo`)
 } else if (number < 0){
@@ -18,21 +18,27 @@ console.groupEnd()
 
 // Verifica si un número es negativo.
 console.groupCollapsed(" Ejercicio 2")
-let numberN = parseInt(prompt("Ingresa un número \n para saber si negativo:"));
+let numberN = Number(prompt("Ingresa un número \n para saber si negativo:"));
 if (numberN < 0) {
     console.log(` ${numberN} Es negativo`)
-} else {
+} else if (numberN > 0){
     console.log(` ${numberN} Es positivo`)
+}else if(number == 0){
+    console.log(` ${number} Es cero`)
+}else{
+    console.log(` ${number} No es una entrada válida`)
 }
 console.groupEnd()
 
 // Comprueba si un número es par.
 console.groupCollapsed(" Ejercicio 3")
-let numeroPar = parseInt(prompt("Ingresa un número \n para saber si es par:"));
+let numeroPar = Number(prompt("Ingresa un número \n para saber si es par:"));
 if (numeroPar % 2 === 0) {
     console.log(` ${numeroPar} Es par`)
-} else {
+} else if(numeroPar % 2 !== 0) {
     console.log(` ${numeroPar} Es impar`)
+}else{
+    console.log(` ${numeroPar} No es una entrada válida`)
 }
 console.groupEnd()
 
@@ -41,8 +47,10 @@ console.groupCollapsed(" Ejercicio 4")
 let numeroImpar = parseInt(prompt("Ingresa un número \n para saber si es impar:"));
 if (numeroImpar % 2 !== 0) {
     console.log(` ${numeroImpar} Es impar`)
-} else {
+} else if(numeroPar % 2 === 0) {
     console.log(` ${numeroImpar} Es par`)
+}else{
+    console.log(` ${numeroPar} No es una entrada válida`)
 }
 console.groupEnd()
 
