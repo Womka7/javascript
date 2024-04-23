@@ -188,15 +188,27 @@ let mascota={
         apellidoPr:"pineda",
         tipoD:"cc",
         docuId:"123445646"
+    },
+    infoprop: function (){
+        console.log(`\n ${this.propietario.nombrePr}\n es el dueño y esta identificado ${this.propietario.tipoD} numero \n${this.propietario.docuId}`)
+
+    },
+    infomascota:function(){
+        console.log(`El nombre de la mascota es : \n ${this.nombrem} \nsu edad es: \n ${this.edad}`)
     }
 
 }
+
+
+mascota.infomascota()
+
+mascota.infoprop()
 
 let{ 
     nombrem:numascota,
     edad:edadmascota
 }=mascota
-console.log(`El nombre de la mascota es : \n ${numascota} \nsu edad es: \n ${edadmascota}`)
+console.log
 
 console.log
 
@@ -208,5 +220,4 @@ let{
     }
 }=mascota
 
-console.log(`El dueño de \n ${numascota}\n es \n${dueño} \nidentificado con \n${tipoDoc} numero \n${Idueño}`)
 console.groupEnd()
