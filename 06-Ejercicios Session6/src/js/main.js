@@ -9,7 +9,7 @@ if(number1<number2){
     console.log(`${number1} y ${number2} son iguales`)
 }else if(number1>number2){
     let resta = (number2-number1)
-    let estador=resta.toString()
+    // let estador=resta.toString()
     if(estador.includes("-")){
         console.log(`${estador} es un numero negativo`)
     }   
@@ -20,6 +20,8 @@ console.groupEnd()
 
 // Ejercicio 2
 console.groupCollapsed("Ejercicio2")
+
+
 
 console.groupEnd()
 
