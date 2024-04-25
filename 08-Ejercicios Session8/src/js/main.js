@@ -155,6 +155,13 @@ console.groupEnd();
 // Ejercicio 24
 // 24. Elimina los elementos duplicados del array duplicados y muestra el nuevo array sin duplicados en la consola.
 console.groupCollapsed("Ejercicio 24");
+let numberArrayDu=[1,5,1,2,2,4,7,1,2,9,5,7]
+let numberSinD=[]
+
+for(let i=0; i<numberArrayDu.length;i++){
+    let estado=false;
+}
+
 console.groupEnd();
 
 // Ejercicio 25
