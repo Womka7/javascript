@@ -54,6 +54,8 @@ function multiplicarTabla(numero, inicio, fin) {
     }
 }
 
+
+
 multiplicarTabla(5, 1, 10);
 
 // 15.Encontrar el número mayor entre 3, 7 y 2.
