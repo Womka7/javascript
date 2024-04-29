@@ -247,35 +247,47 @@ console.groupEnd()
 
 // Ejercicio 24
 console.groupCollapsed("Ejercicio 24")
-function esPangrama(phrasePangrama){
+// function esPangrama(phrasePangrama){
 
-    const alphabe = "abcdefghijklmnñopqrstuvwxy"
-    phrasePangrama=phrasePangrama.toLocaleLowerCase()
+//     const alphabe = "abcdefghijklmnñopqrstuvwxy"
+//     phrasePangrama=phrasePangrama.toLocaleLowerCase()
     
-    let letraCade=""
-    for (let caracter of phrasePangrama){
-        if (/[a-z]/.test(caracter)){
-            letraCade.padEnd(caracter)
-        }
-    }return letraCade.size===alphabe.size 
-}
-let phrasePangrama = "El veloz murciélago hindú comía feliz cardillo y kiwi. La cigüeña tocaba el saxofón detrás del palenque de paja."
-if(esPangrama(phrasePangrama)){
-    console.log("la cadena es pangrama");
-}else{
-    console.log("no es pangrama");
-}
+//     let letraCade=""
+//     for (let caracter of phrasePangrama){
+//         if (/[a-z]/.test(caracter)){
+//             letraCade.padEnd(caracter)
+//         }
+//     }return letraCade.size===alphabe.size 
+// }
+// let phrasePangrama = "El veloz murciélago hindú comía feliz cardillo y kiwi. La cigüeña tocaba el saxofón detrás del palenque de paja."
+// if(esPangrama(phrasePangrama)){
+//     console.log("la cadena es pangrama");
+// }else{
+//     console.log("no es pangrama");
+// }
 
 console.groupEnd()
 
 // Ejercicio 25
 console.groupCollapsed("Ejercicio 25")
+let diaSemana ="lunes"
 
+if (diaSemana.toLowerCase()=="lunes" || diaSemana.toLowerCase()=="martes"||diaSemana.toLowerCase()=="miercoles"||diaSemana.toLowerCase()=="jueves"||diaSemana.toLowerCase()=="viernes"){
+    console.log(`el dia ${diaSemana} es un día de semana laborable`);
+}else{
+    console.log(`el dia ${diaSemana} no es laborable es de Descanso `);
+}
 console.groupEnd()
 
 // Ejercicio 26
 console.groupCollapsed("Ejercicio 26")
+let diaSemanaF ="sabado"
 
+if (diaSemana.toLowerCase()=="sabado" || diaSemana.toLowerCase()=="domingo"){
+    console.log(`el dia ${diaSemanaF} no es laborable es de Descanso `);
+}else{
+    console.log(`el dia ${diaSemanaF} es un día de semana laborable`);
+}
 console.groupEnd()
 
 // Ejercicio 27
